@@ -51,7 +51,7 @@
         <h2>Get food fast &mdash; Not fast food</h2>
         <p class="long-copy">
             Hello, we're omifood, your new food delivery service. We know you're always busy. No time for
-            cooking. So let us take care of that, we're really good at it, we promise!
+            cooking. So let us take care of that, we're perfect at it, we promise!
         </p>
     </div>
     <div class="row ">
@@ -60,7 +60,7 @@
             <h3>Upto 365 days/year</h3>
             <p>
                 Hello, we're omifood, your new food delivery service. We know you're always busy. No time for
-                cooking. So let us take care of that, we're really good at it, we promise!
+                cooking. So let us take care of that, we're perfect at it, we promise!
             </p>
         </div>
         <div class="col span_1_of_4 box">
@@ -68,7 +68,7 @@
             <h3>Ready in 20 mins</h3>
             <p>
                 Hello, we're omifood, your new food delivery service. We know you're always busy. No time for
-                cooking. So let us take care of that, we're really good at it, we promise!
+                cooking. So let us take care of that, we're perfect at it, we promise!
             </p>
         </div>
         <div class="col span_1_of_4 box">
@@ -76,7 +76,7 @@
             <h3>100% organic</h3>
             <p>
                 Hello, we're omifood, your new food delivery service. We know you're always busy. No time for
-                cooking. So let us take care of that, we're really good at it, we promise!
+                cooking. So let us take care of that, we're perfect at it, we promise!
             </p>
         </div>
         <div class="col span_1_of_4 box">
@@ -84,7 +84,7 @@
             <h3>Order anything</h3>
             <p>
                 Hello, we're omifood, your new food delivery service. We know you're always busy. No time for
-                cooking. So let us take care of that, we're really good at it, we promise!
+                cooking. So let us take care of that, we're perfect at it, we promise!
             </p>
         </div>
     </div>
@@ -340,10 +340,10 @@
                         </li>
                         <li>
                             <div>
-                            <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>
                             </div>
                             <div>
-                            Access to newest creation
+                                Access to newest creation
                             </div>
                         </li>
                         <li>
@@ -508,31 +508,34 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-    
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+    document.getElementById("submit").onclick=function (){
+        alert("User registered");
+    }
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
     });
-    </script>
+</script>
 </body>
 
 </html>
